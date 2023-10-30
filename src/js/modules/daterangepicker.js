@@ -39,6 +39,11 @@ export default class DateRangePickerWrapper {
      */
     init() {
         const input = document.querySelector(this.selector);
-        const _ = new DateRangePicker(input, this.options, this.dateRangePickerCallback.bind(this));
+        const _ = new DateRangePicker(
+            input,
+            this.options,
+            this.dateRangePickerCallback.bind(this)
+        );
     }
 }
+
